@@ -159,13 +159,19 @@
 }
 
 .hero-header img {
-    animation: imgRotate 50s linear infinite;
+    animation: imgRotate 0.00000001s linear infinite;
 }
 
 @keyframes imgRotate { 
     100% { 
         transform: rotate(360deg); 
     } 
+}
+
+@keyframes imgRotateReverse {
+    100% {
+        transform: rotate(-360deg)
+    }
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -271,7 +277,7 @@
     height: 100px;
     background: var(--primary);
     border-radius: 50%;
-    animation: pulse-border 1500ms ease-out infinite;
+    animation: pulse-border 1500ms ease-out 3;
 }
 
 .video .btn-play:after {
